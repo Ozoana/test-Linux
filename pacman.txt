@@ -1,0 +1,30 @@
+# printah di pacman 
+
+pacman -Syy 
+untuk melakukan refresh dan melakukan singkronisasi lagi ke server repository nya
+tidak wajib di lakukan, tapi tidak ada salah nya agar mencegah kesalahan pacman yang dimana packages nya tidak di temukan padahal ada
+
+sudo pacman -S obsidian
+untuk menginstal packages, jadi bagian obsidian itu di ganti dengan nama packages yang kalian inginkan
+
+sudo pacman -R obsidian
+untuk menghapus packages, tulis nama packages yang ingin di hapus
+
+(pacman -R dan -S bisa menginstal atau menghapus packages lebih dari 1, contoh kalia ingin menghapus 2 atau instal 2 packages, kalian bisa menambahkan nama lagi setelah nama packages pertama)
+
+#jika tau nama packages tapi tidak bisa di dowload 
+ada 2 kemungkinan nya, nama packages yang salah, atau packages nya tidak ada, ada 2 cara untuk hal ini 
+masuk ke web ARC di bagian packages, cari nama packages yang kalian ingat, nanti akan di cari nama lengkap nya, dan ada atua tidak.
+lalu cara berikut nya dengan perintah :
+
+pacman -Ss obsidian
+untuk bagian text obsidian bisa kalian ganti dengan nama packagesyang ingin di cari
+
+#packages yang tidak di perlukan lagi
+pacman -Qdt
+nanti terminal akan menampil kan packages  yang tidak di gunakan lagi, lalu kalian bisa hapus itu
+
+#cek apakah ada packages yang bisa di update 
+sudo pacman -Syu 
+nanti akan memunculkan semua packages yang bisa di update, tekan enter untuk yes, atau ketik y, dan tekan n untuk membatalkan
+
