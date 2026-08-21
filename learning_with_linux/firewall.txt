@@ -1,0 +1,18 @@
+#firewall
+firewall ada di mana mana, misal mobil, rumah, pesawat.
+misal analogi nya mobil, di bagian depan mbio ada firewallagar api dari mesin nya tidak menjalar/menular ke bagian lain, dari situ istilah firewall.
+
+#firewall jaringan
+firewall di jaringan fungsi nya adalah
+untuk mencegah akses yang tidak sah yang mencoba masuk ke jaringan pribadi
+jadi dengan itu firewallmenciptakan koneksi aman antara koneksi jaringan pribadi dan jaringan internet
+
+#cara kerja firewall
+firewallbekerja dengan menyaring data misal IP, port, destination, protocal. bukan hanya itu bsia juga dari nama domain dan program
+aturan itu bisa di ubah dan di sesuaikan oleh administrator jaringan, bisa di ubah yang boleh dan tidak nya. daftar kontrol akses sebutan nya
+
+#jenis firewall 
+1. firewall berbasis host, biasa nya ini adalah firewall dalam bentuk software, dan hanya bisa melindungi komputer itu saja. 
+2. firewall berbasis host pihak ke 3, contoh nya comodo firewall
+3. firewall berbasis jaringan, ini kombinasi perangkat lunak dan perangkat keras, juga beroprasi di jaringa, di antara jaringan pribadi dan jaringan internet, dan juga ini dia melindungi seluruh jaringan, jadi bukan 1 komputer saja
+lalu firewall itu bisa menggunakan, awan dan router
