@@ -1,0 +1,10 @@
+#port
+fungsi nya, menjalankan servis di jaringan
+contoh, misal ada http nomor port nya adalah 80, jadi 80 itu mewalikkan http itu, jadi bisa di panggil port nya saja
+tapi jumlah port itu 65535, di bagi jadi 3 bagian
+0 sampai 1023 = well know ports (semua orang tau, contoh http port nya 80)
+1024 sampai 49151 =registered ports (port umum tapi harus daftar sama yang ngatur port,misal buat aplikais nih kita mau bisa di akses sama public harus di daftarkan dulu ke sini)
+49152 sampai65535 =unregistered / dynemic, privat or ephemeral post (port yang bebas di gunakan)
+
+analogi nya itu untuk fungsi port itu untuk membedasakn servis tertentu, misal ada server lalu ada servis nya www, ssh.
+port www itu 80 dan psot untuk sshitu 22, jadi merka tidak akan terbalik

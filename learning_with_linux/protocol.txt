@@ -1,0 +1,11 @@
+#protocol and port
+
+#protocol menentukan prosedur pengiriman data nya
+
+#TCP
+TCP itu reliable
+TCP digunakan untuk IP karean support Error Checking ya itu sisebut 3 way handshake, jadi misal kita kirim paket, 10 yang di terima pasti 10, msial paket hilang maka TCP akan reques lagi, jadi yang di terima tetap utuh
+
+#UDP is more faster
+UDP dugunakan untuk vidio striming, games, dan aplikasi lain yang membutuhkan kecepatan
+jadi UDP ini "yang penting sampai" 
