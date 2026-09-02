@@ -1,0 +1,9 @@
+#docker arsitecture
+
+docker menggunakan arsitecture client and server
+maksud nya ketika dowload aplikasi docker, nanti isi nya ada 2 isi nya, client dan server
+client = docker client ini yang kita gunakan untuk berkomunikasi dengan docker deamond(server)
+server = untuk menanage docker itu sendiri
+jadi ketika kita mengetik perintah di docker client itu sebenar nya dia mengirimkan nya ke docker server atau nama nya docker deamond
+jadi yang paling wajib itu adalah memastikan docker server nya berjalan, karena kalo tidak nanti client nya akan kirim ke mana? oromatis tidak jalan
+mereka berkomunikasi dengan REST API, sebenar nya bisa langsung connect ke server nya kalo mau 

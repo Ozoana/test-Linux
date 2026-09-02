@@ -1,0 +1,5 @@
+#instal
+
+docker itu bisa di instal hampir dimana saja, entah itu mac, windows atau linux
+tapi untuk windows dan mac harus instal varian yang docker desktop
+

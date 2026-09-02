@@ -1,0 +1,7 @@
+#docker Registry
+
+ini tempat penyimpanan docker image
+dengan ada nya docker Registry kita bisa menyimpan image yang kita buat dan bisa di gunakan docker deamond dimana pun selama bisa terkoneksi ke docker Registry
+misal di server kita punya docker dan di leptop kita punya docker juga, kita tidak perlu lagi mengirim dari leptop ke server itu, kita tinggal ambil dari docker Registry untuk image nya
+docker Registry tersebut bisa dibuat atua gunakan yang sudah ada untuk ini saya gunakan hub.docker.com 
+saya gunakan Registry yang sudah ada, boleh saja jika mau yang lain.
