@@ -1,0 +1,5 @@
+#container Exec 
+
+jika kita membuat container, aplikasi yang terdapat di dalam container tersebut hanya bisa di akses dari dalam container itu
+oleh karena itu kita kadang harus masuk kedalam container agar bisa mengecek aplikasi tersebut atau akses langsung
+nah untuk masuk kedalam container kita bisa gunakan fitur yang nama nya container Exec sebenar nya ini lebih ke mengeksekusi program yang ada di dalam container nya tapi ini juga bisa di gunakan untuk masuk kedalam container nya

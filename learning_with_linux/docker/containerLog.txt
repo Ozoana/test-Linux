@@ -1,0 +1,11 @@
+#container log
+
+kadang kalo ada masalah di aplikasi kita, kita pasti mau liat log nya kan (log itu seprti buku yang nyimpan semua nya, entah itu pesan eror bahkan sampai aktivitas sistem atau palikasi tersebut)
+nah di container ini semua activitas nya berjalan, entah eror atau tidak seperti yang ku jelasin taid, semua nya bisa di cek dengan cara 
+ketik perintah : docker container logs containerID/nameContainer 
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+ 
+kalo mau lihat secara realtime (seperti nunggu log baru dan keluar secara otomatis)
+perintah :  docker container logs -f containerID/nameContainer 
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+bagian -f itu artinya nunggu, jadi tambah perintah itu saja untuk menunggu
