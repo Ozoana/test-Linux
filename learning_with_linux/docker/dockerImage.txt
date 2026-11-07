@@ -1,14 +1,14 @@
 #docker image
 
 docker image mirip seperti instaler aplikasi, yang dimana di dalam docker image sudah ada depedency yang di perlukan
-nah misal kita mau jalankan aplikasi di leptop lain nih,berarti jalankan aplikasi php di dalam container nyakan, dia tidak akan bisa jalan jika kit tidak dowload image na dulu, begitu
+nah misal kita mau jalankan aplikasi di leptop lain nih,berarti jalankan aplikasi php di dalam container nyakan, dia tidak akan bisa jalan jika kita tidak dowload image nya dulu, begitu
 dan untuk melihat image yang ada di server deamond kita apa saja, kita bisa gunakan perintah : docker image ls
 
 #cara dowload image 
 kan aku gunakan hub.docker.com untuk regisry nya, di situ ada pilihan explore atua cari aja image dengan gunakan web hub.docker.com atau Registry yang lain
-misal aku mau memilih mysql, jadi aku instal image mysql, aku harus memasukan perintah : docker image pull nameImage:tag 
+misal aku mau memilih mysql, jadi aku instal image mysql, aku harus memasukan perintah : docker image pull nameImage:tag atau bisa juga docker pull nameImage:tag
 (bagian nameImage:tag itu di sesuaikan, misal nama image nya tadi mysql dan tag itu versi nya, kalo tag gak di isi dia akan otomatis dowload yang paling baru. di situ banyak pilihan tag, jadi sesuaikan saja dengan docker image yang mau kalian dowload)
-dan jika kalian dowload image yang sama dan versi yang sama, dia tidak akan dowload ulang, jadi misal di erver docker sudha adda image dan tag nya, dia akan memakai yang sudah ada, bukan dowload ulang
+dan jika kalian dowload image yang sama dan versi yang sama, dia tidak akan dowload ulang, jadi misal di server docker sudha ada image dan tag nya, dia akan memakai yang sudah ada, bukan dowload ulang
 
 #cara hapus image
 jika sudah tidak di perlukan lagi kita bisa hapus dengan perintah :docker image rm nameImage:tag 

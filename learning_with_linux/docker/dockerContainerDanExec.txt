@@ -1,0 +1,61 @@
+#docker container
+
+jika sebelum nya image itu seperti instal aplikasi, maka docker container ini adalah hasil dari aplikasi tersebut, tapi dia bisa gunakan 1 image untuk banyak container, asal nama nya beda
+maksud nya atau contoh nya, misal kita docker pull php:latest (kita dowload php versi terbaru nya) maka kita bisa gunakan image itu untuk membuat container, misal kita buat container "coba1" dari image Php ini, terus kita buat lagi, container "coba2" dari image yang sama, ya itu image Php
+jadi 2 container tersebut bisa gunakan bahasa php dan jika kita sudah gunakan suatu image maka image yang digunakan tersebut tidak bisa di hapus, ini terjadi karena container yang di buat menggunakan image tersebut, bukan di copy isi image nya.
+
+lalu ada juga pertanyaan : misal kita buat container tapi pake lebih dari image apaa bisa? jawaban nya bisa tapi lebih di sarankan pake yang nama nya Network atau Docker Compose, jika tidak mau bisa buat image sendiri dan di isi dengan apa saja yang di perlukan,jadi tidak perlu 2 image untuk 1 container.
+
+ada 2 time image, 1 image berbasis bash dan yang tidak, yang tidak ini berbasis server gitu atau aplikasi. 2 tipe itu berbeda cara nya.
+
+#cara jika berbasis server atau clie: 
+#
+#memulai nya itu harus dengan perintah : sudo docker run -it --name belajarcyber kalilinux/kali-rolling bash
+
+fungsi nya itu agar membuat dan menjalankan sekaligus, jika pake perintah exit di terminal nya maka dia akan berhenti juga berjalan container nya otomatis,
+
+#lalu jika menjalankan nya saja tampa masuk juga bisa dengan : sudo docker start containerID/nameContainer
+
+TAPI jika terlanjur kita bisa pake exec
+
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+
+#tapi lebih baik jika berbasis clie itu pake perintah : sudo docker start -ai containerID/nameContainer
+fungsi nya itu agar menjalankan lagi container nya sekaligus masuk ke terminal nya
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+
+#cara memulai nya jika berbasis server atau aplikasi : 
+#
+#cara buat container
+perintah = docker container create --name coba1 php:latest
+
+lalu di sini nama itu harus uniq, jadi tidak bisa sama
+
+
+#cara jalankan container
+perintah = docker container start containerID/nameContainer 
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+
+#cara menghentikan container yang sedang jalan 
+perintah = docker container stop containerID/nameContainer 
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+
+#cara hapus container 
+docker container rm containerID/nameContainer 
+(untuk bagian containerID/nameContainer itu maksud nya bisa di isi container id nya atau nama container nya, jadi 2 cara, bebas aja)
+dan perlu di ingat, container ini tidak bisa di hapus sebelum dia di hentikan, jadi hentikan dulu, baru bisa di hapus
+
+#cara liat container
+cara liat semua docker container yang kita buat, mau itu dijalankan atau tidak
+perintah : docker container ls -a
+cara liat container yang sedang berjalan saja : docker container ls 
+
+nanti disini ada port, jika port itu tidak apa apa misal nya container lain berjalan di port yang sama, karnea container ini sistem nya terisolasi, jadi tidak akan bentrok, dia gunakan port dai container tersebut, bukan dari sistem komputer nya gitu.
+
+#Exec
+jika kita membuat container, aplikasi yang terdapat di dalam container tersebut hanya bisa di akses dari dalam container itu
+oleh karena itu kita kadang harus masuk kedalam container agar bisa mengecek aplikasi tersebut atau akses langsung
+secara garis besar nya saja exec itu masuk ke terminal container nya yang kita pilih, ini bisa masuk ke container yang pake image clie atau yang tidak, nah jika terlanjut menyalakan tampa masuk ke clie nya, bisa pake cara ini.
+perintah nya : sudo docker container exec -it nameContainer bash 
+
+

@@ -5,5 +5,11 @@ maksud nya ketika dowload aplikasi docker, nanti isi nya ada 2 isi nya, client d
 client = docker client ini yang kita gunakan untuk berkomunikasi dengan docker deamond(server)
 server = untuk menanage docker itu sendiri
 jadi ketika kita mengetik perintah di docker client itu sebenar nya dia mengirimkan nya ke docker server atau nama nya docker deamond
-jadi yang paling wajib itu adalah memastikan docker server nya berjalan, karena kalo tidak nanti client nya akan kirim ke mana? oromatis tidak jalan
-mereka berkomunikasi dengan REST API, sebenar nya bisa langsung connect ke server nya kalo mau 
+jadi yang paling wajib itu adalah memastikan docker server nya berjalan, karena kalo tidak nanti client nya akan kirim ke mana? otomatis tidak jalan
+mereka berkomunikasi dengan REST API, sebenar nya bisa langsung connect ke server nya kalo mau.
+
+cara cek status nya docker : systemctl status docker 
+lalu cara misal cek apakah docker nya itu sudah berkomunikasi dengan sever atau belum : docker info
+cara jalankan docker : sudo systemctl start docker 
+atau bisa juga jika mau otomatis nyala: sudo systemctl enable docker
+misal mau cek versi juga bisa : docker version

@@ -1,0 +1,15 @@
+#docker port, port forwarding
+ingatkan kalo container nya aktif maka dia akan memunculkan port (misal tidak berarti yang itu pake image clie/bash)
+nahh dan sifat dari port container nya itukan terisolasi, tidak bisa di akses oleh host, karena port itu hanya bekerja di dalam container tersebut.
+disini lah fungsi dari port forwarding, ya itu menjadi jembatan/membuat port container nya jadi public dan bisa di akses oleh host.
+misal ada web laravel di dalam container, saat dijalankan ternyata port container nya itu 173, jika di masukan di dalam browser port 173 maka tidak muncul apapun.
+itu karena terisolasi tadi. solusi nya
+
+#perintah 
+docker container create --name coba1 --public port host:port container php:latest
+(misal kita buat di port 180 host menjadi 173 container bisa seperti ini : docker container create --name coba1 --public 180:173 php:latest )
+jadi jika di akses browser port 180 yang akan muncul adalah isi container dengan port 173 itu.
+bisa juga --public di singkat jadi -p
+bisa juga di buat gini :
+Jika temanmu (di dalam jaringan Wi-Fi yang sama) ingin mengakses aplikasi Laravelmu
+ mereka tidak mengetik localhost, melainkan IP Laptop kam
